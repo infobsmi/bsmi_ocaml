@@ -13,5 +13,5 @@ module Netrc: Netrc_type = struct
      s
 
      let readHelloWorld ()  = "I am the hello world"
-     let hello () = print_endline "Gear box"
+     let hello () = print_endline "Gear box from module"
 end
