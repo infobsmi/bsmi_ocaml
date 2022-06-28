@@ -12,7 +12,7 @@ doc: "https://github.com/infobsmi/bsmi_ocaml/wiki"
 bug-reports: "https://github.com/infobsmi/bsmi_ocaml/issues"
 depends: [
   "ocaml"
-  "re"
+  "re" {>= "1.10.4"}
   "dune" {>= "3.3"}
   "odoc" {with-doc}
 ]
