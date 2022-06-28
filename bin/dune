@@ -1,7 +1,7 @@
 (executable
  (name bsmi_ocaml_hello)
  (public_name bsmi_ocaml_hello)
- (libraries bsmi_ocaml))
+ (libraries bsmi_ocaml re))
 
  (install
   (section bin)
