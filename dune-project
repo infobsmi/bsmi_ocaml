@@ -11,7 +11,7 @@
 
 (maintainers "cnmade")
 
-(license LICENSE)
+(license AGPL-3.0-only)
 
 (documentation https://url/to/documentation)
 
