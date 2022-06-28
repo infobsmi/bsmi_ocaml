@@ -13,14 +13,14 @@
 
 (license AGPL-3.0-only)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/infobsmi/bsmi_ocaml/wiki)
 
 (package
  (name bsmi_ocaml)
- (synopsis "Bsmi ocaml library")
- (description "A very useful tool collections")
- (depends ocaml dune)
+ (synopsis "Bsmi common ocaml library")
+ (description "Provided common tools deal with time,date, strings, html, filters.")
+ (depends ocaml re dune)
  (tags
-  (topics "tools" your project)))
+  ("tools")))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
