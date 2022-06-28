@@ -5,11 +5,11 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github infobsmi/bsmi_ocaml))
 
-(authors "Author Name")
+(authors "cnmade")
 
-(maintainers "Maintainer Name")
+(maintainers "cnmade")
 
 (license LICENSE)
 
@@ -17,10 +17,10 @@
 
 (package
  (name bsmi_ocaml)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "Bsmi ocaml library")
+ (description "A very useful tool collections")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
+  (topics "tools" your project)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
