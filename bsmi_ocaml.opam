@@ -2,10 +2,10 @@
 opam-version: "2.0"
 synopsis: "Bsmi ocaml library"
 description: "A very useful tool collections"
-maintainer: ["Bsmi Team"]
-authors: ["Cnmade"]
-license: "LICENSE"
-tags: ["topics" "to describe" "your" "project"]
+maintainer: ["cnmade"]
+authors: ["cnmade"]
+license: "AGPL-3.0-only"
+tags: ["topics" "tools" "your" "project"]
 homepage: "https://github.com/infobsmi/bsmi_ocaml"
 doc: "https://url/to/documentation"
 bug-reports: "https://github.com/infobsmi/bsmi_ocaml/issues"
@@ -28,4 +28,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/username/reponame.git"
+dev-repo: "git+https://github.com/infobsmi/bsmi_ocaml.git"
