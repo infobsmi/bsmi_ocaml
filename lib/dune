@@ -3,4 +3,5 @@
 (library
  (public_name bsmi_ocaml)
  (name bsmi_ocaml)
+ (libraries unix)
  )

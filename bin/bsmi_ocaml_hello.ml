@@ -1,4 +1,5 @@
 open Bsmi_ocaml.Netrc
+open Bsmi_ocaml.Timeutils
 
 
 let netrcStr: string = "machine google.com  login admin password hellomotog"
@@ -19,3 +20,4 @@ let () =
   let strList = Re.split re_whitespace netrcStr in 
   let twoStr =  String.concat "," strList in
   print_endline twoStr;;
+  print_endline (string_of_float (Timeutils.now () ));;
