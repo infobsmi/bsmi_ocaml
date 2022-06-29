@@ -1,4 +1,2 @@
-module Stringutils : sig
-  val string_before : string -> int -> string
-  (** Substring 0-n  get string first n chars *)
-end
+val string_before : string -> int -> string
+(** Substring 0-n  get string first n chars *)
