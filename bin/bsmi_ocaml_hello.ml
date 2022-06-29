@@ -1,6 +1,6 @@
 open Bsmi_ocaml.Netrc
 open Bsmi_ocaml.Timeutils
-
+open Bsmi_ocaml.Phoneutils
 
 let netrcStr: string = "machine google.com  login admin password hellomotog"
 let re_whitespace = Re.Posix.compile_pat "[\t ]+"
@@ -24,3 +24,6 @@ let () =
   print_endline (string_of_int (Timeutils.nowAsInt ()));;
   print_endline (string_of_int (Timeutils.nowAsMilsInt ()));;
   print_endline (string_of_int (Timeutils.nowAsMicroInt ()));;
+  print_endline (string_of_bool (Phoneutils.isValidCnPhone "13367001010"));;
+  print_endline (string_of_bool (Phoneutils.isValidCnPhone "1207"));;
+  print_endline (string_of_bool (Phoneutils.isValidCnPhone "-1"));;
