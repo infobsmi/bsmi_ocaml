@@ -18,7 +18,7 @@
 (package
  (name bsmi_ocaml)
  (synopsis "Bsmi common ocaml library")
- (description "Provided common tools deal with time,date, strings, html, filters.")
+ (description "Provided common tools deal with time,  strings, etc.")
  (depends ocaml  ( re (>=  1.10.4)  ) dune)
  (tags
   ("tools")))
