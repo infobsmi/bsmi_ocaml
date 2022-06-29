@@ -1,19 +1,23 @@
 ; now we tell you how to define a custom rule 
 ; rule start with (rule )
-(rule 
-; (alias is point  the command name , so you can run this rule by call  dune build @docopen
- (alias docopen) 
+
+(rule
+ ; (alias is point  the command name , so you can run this rule by call  dune build @docopen
+ (alias docopen)
  ; following line is very important, it tell dune do not cache this build command, so it will running every call without any cache
  (deps (universe))
  ; action  (system  to told system run command by `sh` in your Linux/MacOS, windows user may running cmd.exe 
  ; cd ../.. is change the base directory of the running command ,or the default directory will be _build/default  
- (action (system "cd ../.. && pwd &&  dune build @doc && open _build/default/_doc/_html/index.html" ))
-)
+ (action
+  (system
+   "cd ../.. && pwd &&  dune build @doc && open _build/default/_doc/_html/index.html")))
+
 ; end of one piece of rule
 
 ; and we define more and more rule as we want 
+
 (rule
-  (alias whoami)
-  (deps (universe))
-  (action (system "uname -a;whoami"))
-)
+ (alias whoami)
+ (deps (universe))
+ (action
+  (system "uname -a;whoami")))

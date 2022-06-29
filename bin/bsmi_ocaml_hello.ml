@@ -2,28 +2,26 @@ open Bsmi_ocaml.Netrc
 open Bsmi_ocaml.Timeutils
 open Bsmi_ocaml.Phoneutils
 
-let netrcStr: string = "machine google.com  login admin password hellomotog"
+let netrcStr : string = "machine google.com  login admin password hellomotog"
 let re_whitespace = Re.Posix.compile_pat "[\t ]+"
-
-
-let i = "a world";;
-
-
+let i = "a world"
 let hello () = print_endline "Gear box, i am from bsmi_ocaml_hello.ml"
 
 let () =
   hello ();
-  Netrc.hello (); 
+  Netrc.hello ();
   print_endline i;
-  let a  = Netrc.readAsString () in
+  let a = Netrc.readAsString () in
   print_endline a;
-  let strList = Re.split re_whitespace netrcStr in 
-  let twoStr =  String.concat "," strList in
-  print_endline twoStr;;
-  Printf.printf "%.6f\n" (Timeutils.now () );;
-  print_endline (string_of_int (Timeutils.nowAsInt ()));;
-  print_endline (string_of_int (Timeutils.nowAsMilsInt ()));;
-  print_endline (string_of_int (Timeutils.nowAsMicroInt ()));;
-  print_endline (string_of_bool (Phoneutils.isValidCnPhone "13367001010"));;
-  print_endline (string_of_bool (Phoneutils.isValidCnPhone "1207"));;
-  print_endline (string_of_bool (Phoneutils.isValidCnPhone "-1"));;
+  let strList = Re.split re_whitespace netrcStr in
+  let twoStr = String.concat "," strList in
+  print_endline twoStr
+;;
+
+Printf.printf "%.6f\n" (Timeutils.now ());;
+print_endline (string_of_int (Timeutils.nowAsInt ()));;
+print_endline (string_of_int (Timeutils.nowAsMilsInt ()));;
+print_endline (string_of_int (Timeutils.nowAsMicroInt ()));;
+print_endline (string_of_bool (Phoneutils.isValidCnPhone "13367001010"));;
+print_endline (string_of_bool (Phoneutils.isValidCnPhone "1207"));;
+print_endline (string_of_bool (Phoneutils.isValidCnPhone "-1"))
