@@ -10,7 +10,7 @@
  ; cd ../.. is change the base directory of the running command ,or the default directory will be _build/default  
  (action
   (system
-   "cd ../.. && pwd &&  dune build @doc && open _build/default/_doc/_html/index.html")))
+   "set -ex && cd ../.. && pwd  && rm -rf _build/default/_doc &&  dune build @doc --verbose && open _build/default/_doc/_html/index.html")))
 
 ; end of one piece of rule
 
@@ -20,4 +20,10 @@
  (alias whoami)
  (deps (universe))
  (action
-  (system "uname -a;whoami")))
+  (system "set -ex && uname -a;whoami")))
+
+(rule
+ (alias ff)
+ (deps (universe))
+ (action
+  (system "set -ex && cd ../.. && pwd && dune build @fmt --verbose --auto-promote")))
