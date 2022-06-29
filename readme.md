@@ -1,18 +1,17 @@
-# bsmi_ocaml 项目
+# bsmi_ocaml common library
 
+Document: [https://infobsmi.github.io/bsmi_ocaml/index.html](https://infobsmi.github.io/bsmi_ocaml/index.html)
 
-## 构建和运行
+## build and running  
 
 ```bash
-$ dune build @install
-$ dune exec bsmi_ocaml
-```
+ dune build 
+# build document
+dune build @docopen
 
+# format the source code
+dune build @ff
 
-## 构建运行测试用例
-** 以下可能不是必须要的
-bin目录是示例代码，我们可以通过下面的代码运行
-```bash
-$ dune build bin/bsmi_ocaml_hello.exe
-$ dune exec ./bin/bsmi_ocaml_hello.exe
+# run example app
+ dune exec bsmi_ocaml
 ```
