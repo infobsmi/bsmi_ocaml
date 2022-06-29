@@ -15,3 +15,8 @@ dune build @ff
 # run example app
  dune exec bsmi_ocaml
 ```
+
+## License 
+
+
+We using [GNU Affero General Public License v3.0](https://github.com/infobsmi/bsmi_ocaml/blob/master/LICENSE)
